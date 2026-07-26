@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: 85430a7c15a8401488c94431841a3a99
+AssetOrigin:
+  serializedVersion: 1
+  productId: 325134
+  packageName: PolyPeople Series - City People
+  packageVersion: 1.0
+  assetPath: Assets/People/Meshes/Female_Teen.fbx
+  uploadId: 784042
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 24200
   internalIDToNameTable: []
   externalObjects: {}
   materials:
@@ -35,7 +42,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1
@@ -56,6 +63,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -307,8 +317,7 @@ ModelImporter:
     - name: Upper Arm.L
       parentName: Shoulder.L
       position: {x: -2.980228e-10, y: 0.0007704454, z: -4.4408918e-17}
-      rotation: {x: -0.0000000055298726, y: -0.0000000017609231, z: -0.060959198,
-        w: 0.9981403}
+      rotation: {x: -0.0000000055298726, y: -0.0000000017609231, z: -0.060959198, w: 0.9981403}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Lower Arm.L
       parentName: Upper Arm.L
@@ -434,10 +443,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 325134
-  packageName: PolyPeople Series - City People
-  packageVersion: 1.0
-  assetPath: Assets/People/Meshes/Female_Teen.fbx
-  uploadId: 784042
