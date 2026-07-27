@@ -1,6 +1,6 @@
 # The Station
 
-Created for both The Singapore Police Force's Delta Challenge, as well as Ngee Ann Polytechnic's Year 2 Intergrated Studio Project
+Created for both The Singapore Police Force's Delta Challenge, as well as Ngee Ann Polytechnic's Year 2 Integrated Studio Project
 
 The Station is a game that aims to educate the general public on the general warning signs of Crime. The game is set in a heavily inspired, Singapore MRT Station.
 
