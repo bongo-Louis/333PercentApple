@@ -8,27 +8,41 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    //Private variable that still shows up in editor
-    [SerializeField] GameObject pauseMenu; 
-    [SerializeField] private string sceneID;
+    //Private variable that still shows up in editor 
+    [SerializeField] private GameObject pauseMenuUI;
+    public static bool isPaused = false;
+
+    void Update()
+    {
+        //Checks if the escape key is pressed
+        if ()
+        {
+            //If the pause menu is active, resume game
+            if (isPaused)
+            {
+                Resume();
+            }
+            //If the pause menu is inactive, pause game
+            else
+            {
+                Pause();
+            }
+        }
+    }
     
     public void Pause()
     {
         //Freezes time to pause game
-        pauseMenu.SetActive(true);
+        pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
+        isPaused = true;
     }
 
     public void Resume()
     {
         //Unfreezes game to unpause
-        pauseMenu.SetActive(false);
+        pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-    }
-    public void Menu(int sceneID)
-    {
-        //Unfreezes game and loads a different scene(Menu)
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(sceneID);
+        isPaused = false;
     }
 }
