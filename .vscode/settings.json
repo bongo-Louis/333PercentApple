@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "33o3PercentApple.slnx"
+    "dotnet.defaultSolution": "333PercentApple.slnx"
 }
