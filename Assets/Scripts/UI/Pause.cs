@@ -1,38 +1,33 @@
 //Author:Jayden Ong
 //Description: Script to pause the game and switch between scenes
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem; // 1. Include namespace
 
 public class PauseMenu : MonoBehaviour
 {
-    //Private variable that still shows up in editor 
     [SerializeField] private GameObject pauseMenuUI;
     public static bool isPaused = false;
 
-    void Update()
+    // 2. Unity automatically calls "OnPause" when the "Pause" Action is triggered
+    public void OnPause(InputValue value)
     {
-        //Checks if the escape key is pressed
-        if ()
+        // Only toggle when the button is initially pressed down
+        if (value.isPressed)
         {
-            //If the pause menu is active, resume game
             if (isPaused)
             {
                 Resume();
             }
-            //If the pause menu is inactive, pause game
             else
             {
                 Pause();
             }
         }
     }
-    
+
     public void Pause()
     {
-        //Freezes time to pause game
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
@@ -40,7 +35,6 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-        //Unfreezes game to unpause
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
