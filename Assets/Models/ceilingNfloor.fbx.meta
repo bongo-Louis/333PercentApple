@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5cc09733ca016b948b036b75130acfff
+guid: 5dba182a05d693748be16f1505fef8aa
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -8,37 +8,37 @@ ModelImporter:
       type: UnityEngine:Cubemap
       assembly: UnityEngine.CoreModule
       name: diffuse_cube
-    second: {fileID: 8900000, guid: 2441814993dda684c800e0f8c897735a, type: 3}
+    second: {fileID: 8900000, guid: 690f2b3fcc8986343860cbdd8f671b3c, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: R_wall_low_openPBR_shader1_AO.1001
-    second: {fileID: 2800000, guid: 20c85870bd957e5469ca004c18c91a48, type: 3}
+      name: 2x2_1strip_openPBR_shader1_BaseColor.1001
+    second: {fileID: 2800000, guid: e2cc3b835371c3f4f951d52bc17faea7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: R_wall_low_openPBR_shader1_BaseColor.1001
-    second: {fileID: 2800000, guid: a7e9e4ff4e7bdd142abbe9918c4e045b, type: 3}
+      name: 2x2_1strip_openPBR_shader1_Emissive.1001
+    second: {fileID: 2800000, guid: af7b7c59a802bb147983b6e1b8acaeab, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: R_wall_low_openPBR_shader1_Metallic.1001
-    second: {fileID: 2800000, guid: 405314b777bd3c34f9b0943f550eaa28, type: 3}
+      name: 2x2_1strip_openPBR_shader1_Metallic.1001
+    second: {fileID: 2800000, guid: 356d4b27c60f19a46a05375e610170af, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: R_wall_low_openPBR_shader1_Normal.1001
-    second: {fileID: 2800000, guid: 7fad6e1106153bf438096ddbd28010de, type: 3}
+      name: 2x2_1strip_openPBR_shader1_Normal.1001
+    second: {fileID: 2800000, guid: 59a74605f288d4646b7a87ca07ee38c6, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: R_wall_low_openPBR_shader1_Roughness.1001
-    second: {fileID: 2800000, guid: 8c6d69d1b75284346a9d03b0c946c0cf, type: 3}
+      name: 2x2_1strip_openPBR_shader1_Roughness.1001
+    second: {fileID: 2800000, guid: ce84bba2483d6a841b4b520114337684, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: ibl_brdf_lut
-    second: {fileID: 2800000, guid: 332cc83e38668d34a9b65fcc20017093, type: 3}
+    second: {fileID: 2800000, guid: 0e90627b1aa7d6c488fb81faa417962f, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,42 +3,7 @@ guid: a5ff75ca239e9a240a9e167ff7d2dccb
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Cubemap
-      assembly: UnityEngine.CoreModule
-      name: diffuse_cube
-    second: {fileID: 8900000, guid: 07e539b9b01f763418da9a315d5d5c72, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: escalator_step_lo_pasted__openPBR_shader2_AO.1001
-    second: {fileID: 2800000, guid: ae922fe362b652e48b1950840de50842, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: escalator_step_lo_pasted__openPBR_shader2_BaseColor.1001
-    second: {fileID: 2800000, guid: 6b00d9f8c76e21348a15b8223a0f87c2, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: escalator_step_lo_pasted__openPBR_shader2_Metallic.1001
-    second: {fileID: 2800000, guid: 0af6f17ffb1a58a44a81811d8bd50fea, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: escalator_step_lo_pasted__openPBR_shader2_Normal.1001
-    second: {fileID: 2800000, guid: 1fa16306a3cc5684e96db641a19ff93b, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: escalator_step_lo_pasted__openPBR_shader2_Roughness.1001
-    second: {fileID: 2800000, guid: 182c027f1e8e9144d982dcf18f5af778, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: ibl_brdf_lut
-    second: {fileID: 2800000, guid: 9828e021c026d3c47857bb2bacfd3ee4, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -99,7 +64,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1

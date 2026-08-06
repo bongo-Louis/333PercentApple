@@ -3,7 +3,47 @@ guid: 27034b4a8694ed341a8a99398911ce65
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Cubemap
+      assembly: UnityEngine.CoreModule
+      name: diffuse_cube
+    second: {fileID: 8900000, guid: 21627069c6a86474290b16d5d3c0630b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: L_wall_low_openPBR_shader1_AO.1001
+    second: {fileID: 2800000, guid: f368886d693a2694ca736052ce668414, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: L_wall_low_openPBR_shader1_BaseColor.1001
+    second: {fileID: 2800000, guid: ac81ea27987e37347b0d6df6058ee194, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: L_wall_low_openPBR_shader1_Emissive.1001
+    second: {fileID: 2800000, guid: cf65d297cc4118442adc2ff834837c62, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: L_wall_low_openPBR_shader1_Metallic.1001
+    second: {fileID: 2800000, guid: 44caa91d45a13e74e8be721f9a95fd03, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: L_wall_low_openPBR_shader1_Normal.1001
+    second: {fileID: 2800000, guid: ed2da84f6c57e59499e04b9a300e71e2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: L_wall_low_openPBR_shader1_Roughness.1001
+    second: {fileID: 2800000, guid: 7321939ff8e85834ea092f3201128efb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ibl_brdf_lut
+    second: {fileID: 2800000, guid: f09641923f5b1ce4ebdd5e12dd7d8ef6, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -35,7 +75,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1
