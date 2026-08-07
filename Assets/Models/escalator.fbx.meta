@@ -9,6 +9,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: escalator_atlas
     second: {fileID: 2100000, guid: 715f1e8e764368049b5425433cf75bb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_mat
+    second: {fileID: 2100000, guid: 8233f3e2b6602284bb6c7660b243a5f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__glass_mat1
+    second: {fileID: 2100000, guid: 8233f3e2b6602284bb6c7660b243a5f2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
