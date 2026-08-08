@@ -5,6 +5,11 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Cubemap
+      assembly: UnityEngine.CoreModule
+      name: diffuse_cube
+    second: {fileID: 8900000, guid: 72dbff95022d5244d9c4c9b86a195116, type: 3}
+  - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ceilingNfloor
@@ -12,8 +17,68 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: wall_R_noSign
+    second: {fileID: 627165146271397989, guid: 5cc09733ca016b948b036b75130acfff, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: wall_R_sign
     second: {fileID: 6272999007353152326, guid: 6c97aaaef8059ff4ea759677c9030053, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2x2_1strip_openPBR_shader1_BaseColor.1001
+    second: {fileID: 2800000, guid: f7c14a0b846f6c942af229c51805f9a8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2x2_1strip_openPBR_shader1_Emissive.1001
+    second: {fileID: 2800000, guid: e000ced689ad3b24681beb9a783370d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2x2_1strip_openPBR_shader1_Metallic.1001
+    second: {fileID: 2800000, guid: ffb37d9ae1b4edf44b32a2e01ae8a39b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2x2_1strip_openPBR_shader1_Normal.1001
+    second: {fileID: 2800000, guid: 16c13e9e245873b4e81db90ea472b465, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 2x2_1strip_openPBR_shader1_Roughness.1001
+    second: {fileID: 2800000, guid: 80d5f9b20d96e2242a84fc97e44aa9e7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: R_wall_low_openPBR_shader1_AO.1001
+    second: {fileID: 2800000, guid: cc2e7c191cb5504499bbe687665be602, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: R_wall_low_openPBR_shader1_BaseColor.1001
+    second: {fileID: 2800000, guid: 2a936884013a289408d50c58095f8fb2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: R_wall_low_openPBR_shader1_Metallic.1001
+    second: {fileID: 2800000, guid: f27b68303a80f7842a4d83ffc9e7982c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: R_wall_low_openPBR_shader1_Normal.1001
+    second: {fileID: 2800000, guid: 62f6f411b67812a4f9748e4509459ded, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: R_wall_low_openPBR_shader1_Roughness.1001
+    second: {fileID: 2800000, guid: b44a5b9dfcf32af4a97ba9d14b8e22ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ibl_brdf_lut
+    second: {fileID: 2800000, guid: 12da91f1d9295544383f5c1a163baee4, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +110,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1
