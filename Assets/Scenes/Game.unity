@@ -5860,6 +5860,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 451976568}
     m_Modifications:
+    - target: {fileID: 564013914822336180, guid: 9d525da8bd9972d4596c5bebaafda57b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a68de8665b4cdf49bf0e2b3fee3b64a, type: 2}
     - target: {fileID: 8440646881566966088, guid: 9d525da8bd9972d4596c5bebaafda57b, type: 3}
       propertyPath: m_Name
       value: L_wall (4)
