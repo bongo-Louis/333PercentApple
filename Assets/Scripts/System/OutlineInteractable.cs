@@ -14,27 +14,12 @@ public class OutlineInteractable : MonoBehaviour, IInteractable
     // share the prompt text with the UI system so the text can update
     public string PromptText => promptText;
 
-    // outline disabled by default
-    private void Start()
-    {
-        outlineComponent.enabled = false;
-    }
-
     // onRaycastEnter and onRaycastExit are called by the RaycastManager when the player looks at this interactable object
     public void OnRaycastEnter()
     {
-        if (outlineComponent != null) 
-            outlineComponent.enabled = true;
     }
     
     public void OnRaycastExit()
     {
-        if (outlineComponent != null) 
-            outlineComponent.enabled = false;
-    }
-
-    public void OnInteract()
-    {
-        // other interactable scripst use this function, nothing here
     }
 }
