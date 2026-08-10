@@ -1,8 +1,6 @@
 // Author : Louis Hoe Zheng Sheng
-// okay this script is abit funnier
-// but this script acts as a driver to call other scripts in public 
-// that MIIGHT need to be called on start when the player body is active, 
-// for example cursormanager, scene switcher, etc
+// Description: This script is attached to the player body and is used to call other scripts on start, such as locking the cursor.
+// Date: 25/07/2026
 
 using UnityEngine;
 

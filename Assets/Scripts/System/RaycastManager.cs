@@ -1,11 +1,7 @@
-// Author : Louis Hoe Zheng Sheng
-// ok this script might be kinda hard to for me to work on
-// but this script is attached to the main camera, and is used to communicate with other scripts and other game objects
-// example, toggling an outline, etc.
-// if i in the future add more features i think im gonna call this script something else lol
-// you attach this to the maincamera btw
+// Author : Louis Hoe Zheng Sheng, Carolyn Ong
+// Description: This script manages the raycasting logic for detecting interactables in the scene.
+// Date: 27/07/2026
 
-// import unity
 using UnityEngine;
 
 public class RaycastManager : MonoBehaviour
