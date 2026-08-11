@@ -1,6 +1,8 @@
- //  Author : Louis Hoe Zheng Sheng
+//  Author : Louis Hoe Zheng Sheng
 //  Simple script that will lock and unlock the cursor on start
 //  this will be attached to a dontdestroyon load object and you can call this script to lock and unlock the cursor when needed
+// Date: 25/07/2026
+
 
 using UnityEngine;
 
