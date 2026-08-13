@@ -7,7 +7,8 @@ using TMPro;
 
 public class PlayerCallOnWhat : MonoBehaviour
 {
-    private IInteractable currentInteractable;
+    [SerializeField] private IInteractable currentInteractable;
+    [SerializeField] private DispelAnomaly dispel;
 
     // get the text from the UI and teleport point
     [SerializeField] private TMP_Text promptText;
@@ -38,6 +39,15 @@ public class PlayerCallOnWhat : MonoBehaviour
             player.transform.position = teleportPoint.position;
             player.transform.rotation = teleportPoint.rotation;
             player.enabled = true;
-        }    
+        }
+        else if (promptText.text == "Interact")
+        {
+            if (dispel != null)
+            {
+                Debug.Log("Dispel called");
+                dispel.HandleAnomaly();
+            }
+        }
+
     }
 }

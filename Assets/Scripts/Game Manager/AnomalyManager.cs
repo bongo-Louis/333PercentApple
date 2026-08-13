@@ -75,10 +75,12 @@ public class AnomalyManager : MonoBehaviour
         RollNextHallway();
     }
 
-    private void ResetProgress()
+    public void ResetProgress()
     {
         currentExitCount = 0;
         Debug.Log("Progress reset. Current exit count: " + currentExitCount);
+        UpdateSign();
+        spawner.ClearAllAnomalies(); // Clear any anomalies when progress is reset
     }
 
     private void RollNextHallway()
