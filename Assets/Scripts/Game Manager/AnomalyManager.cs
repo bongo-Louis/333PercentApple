@@ -14,6 +14,8 @@ public class AnomalyManager : MonoBehaviour
     public AnomalySpawner spawner;
     public ExitSignController exitSignController;
 
+    [SerializeField] private WinSpawner winSpawner;
+
     private void Awake()
     {
         Instance = this;
@@ -136,6 +138,15 @@ public class AnomalyManager : MonoBehaviour
     {
         // trigger the win escalator sequence
         Debug.Log("Player has reached the target exit count! Triggering win escalator.");
+        
+        if (winSpawner != null)
+        {
+            winSpawner.SpawnWin();
+        }
+        else
+        {
+            Debug.LogWarning("WinSpawner is not assigned in AnomalyManager.");
+        }
     }
 }
 
