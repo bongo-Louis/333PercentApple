@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 02d9faa99aaa4fb43aa288d85de260bc
+guid: f78c306679bfcfa458140a40f6e90772
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ceilingNfloor
-    second: {fileID: 2100000, guid: 47ee035f36601974f8d7204c5726374a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: signsNposters
-    second: {fileID: 2100000, guid: ed1623645b8c33d4ba53132b64bd74a5, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +35,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1

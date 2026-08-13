@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 02d9faa99aaa4fb43aa288d85de260bc
+guid: c1b62d0f90e97cf4899ba0411b6412c6
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -8,12 +8,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ceilingNfloor
-    second: {fileID: 2100000, guid: 47ee035f36601974f8d7204c5726374a, type: 2}
+    second: {fileID: 2697617066921728218, guid: 883949fc333299742a68e13df8525a22, type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: signsNposters
-    second: {fileID: 2100000, guid: ed1623645b8c33d4ba53132b64bd74a5, type: 2}
+      name: escalator_atlas
+    second: {fileID: -6609505228980019168, guid: 883949fc333299742a68e13df8525a22, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_mat
+    second: {fileID: 2100000, guid: 8233f3e2b6602284bb6c7660b243a5f2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +50,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1
