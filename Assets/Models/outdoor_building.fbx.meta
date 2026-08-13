@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: escalator_atlas
+    second: {fileID: 2100000, guid: 715f1e8e764368049b5425433cf75bb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: signsNposters
     second: {fileID: 2100000, guid: ed1623645b8c33d4ba53132b64bd74a5, type: 2}
   materials:
