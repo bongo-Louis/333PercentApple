@@ -67,7 +67,7 @@ There are also story-based anomalies that will impact the ending should you choo
 - The guy is standing closer to her 
 - The guy takes a photo of her
 
-If you interact with all 5, you achieve the 'Good Ending', where you are able to exit the station!
+If you interact with all 5, you achieve the 'Good Ending', where you are able to exit the station!<br>
 However, not interacting with all 5 will get you the 'Bad Ending'.
 
 ### FSM Diagram
@@ -115,3 +115,8 @@ https://www.facebook.com/asiaonecom/posts/spot-you-will-soon-see-these-visuals-a
 <br>
 
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplay-lh.googleusercontent.com%2F31-D0MLK8ntWWtZYQ-R0MnQy44gO4nhGDzK08YeE5BvpwjuigTJbHK5RVDJ0-3dgpuo6&f=1&nofb=1&ipt=efeac55a1187802d76947b9f7ddd4f6322960dcc6fc054b53a5f176f70e396a2 
+
+
+--
+
+Repo Link: https://github.com/bongo-Louis/333PercentApple
