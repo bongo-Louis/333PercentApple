@@ -15,6 +15,8 @@ public class PlayerCallOnWhat : MonoBehaviour
     [SerializeField] private Transform teleportPoint;
     [SerializeField] private CharacterController player;
 
+    [SerializeField] private SceneSwitcher sceneSwitcher;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,9 +38,7 @@ public class PlayerCallOnWhat : MonoBehaviour
         if (promptText.text == "Enter")
         {
             player.enabled = false;
-            player.transform.position = teleportPoint.position;
-            player.transform.rotation = teleportPoint.rotation;
-            player.enabled = true;
+            sceneSwitcher.LoadScene();
         }
         else if (promptText.text == "Interact")
         {
