@@ -20,6 +20,8 @@ public class MultiObjectFadeSequence : MonoBehaviour
     [Header("Sequence Settings")]
     public List<FadeStep> fadeSequence = new List<FadeStep>();
 
+    public SceneSwitcher sceneSwitcher; // Reference to the SceneSwitcher script
+
     private void Start()
     {
         // Initialize starting alphas based on targeted action
@@ -32,15 +34,16 @@ public class MultiObjectFadeSequence : MonoBehaviour
         }
 
         StartCoroutine(RunSequence());
+
     }
 
     private IEnumerator RunSequence()
     {
+        // 1. Run through and wait for every fade step in order
         foreach (var step in fadeSequence)
         {
             if (step.targetGroup == null) continue;
 
-            // Wait before starting this step if delay is set
             if (step.delayBefore > 0f)
             {
                 yield return new WaitForSeconds(step.delayBefore);
@@ -51,6 +54,8 @@ public class MultiObjectFadeSequence : MonoBehaviour
 
             yield return StartCoroutine(FadeGroup(step.targetGroup, startAlpha, endAlpha, step.fadeDuration));
         }
+        // 2. Trigger scene load once after the entire sequence finishes
+        SceneHandover();
     }
 
     private IEnumerator FadeGroup(CanvasGroup cg, float startAlpha, float endAlpha, float duration)
@@ -65,5 +70,17 @@ public class MultiObjectFadeSequence : MonoBehaviour
         }
 
         cg.alpha = endAlpha;
+    }
+
+    private void SceneHandover()
+    {
+        if (sceneSwitcher != null)
+        {
+            sceneSwitcher.LoadScene();
+        }
+        else
+        {
+            Debug.LogWarning("SceneSwitcher reference is not set.");
+        }
     }
 }

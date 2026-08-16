@@ -6,6 +6,7 @@ public class AnomalyManager : MonoBehaviour
     [Header("Game State")]
     public int currentExitCount = 0; // number of exits the player has passed through
     public int targetWinCount = 10; // number of exits required to trigger the win condition
+    public int dispelCount = 0; // number of anomalies dispelled by the player
 
     [Header("Current Hallway State")]
     public bool isAnomalyPresent = false; // is the anomaly currently present in the hallway?
@@ -13,7 +14,8 @@ public class AnomalyManager : MonoBehaviour
     public bool isDispelled = false; // has the anomaly been dispelled by the player?
     public AnomalySpawner spawner;
     public ExitSignController exitSignController;
-
+    [SerializeField] private GameObject badEndingSequence; // Reference to the BadEndingSequence GameObject
+    [SerializeField] private GameObject winMessage; // Reference to the WinMessage GameObject
     [SerializeField] private WinSpawner winSpawner;
 
     private void Awake()
@@ -23,14 +25,6 @@ public class AnomalyManager : MonoBehaviour
        
     public void EvaluatePlayerChoice(bool wentForward)
     {
-        if (requiresDispel && !isDispelled)
-        {
-            // Player did not dispel the anomaly when required
-            Debug.Log("Anomaly was not dispelled. Exit does not count.");
-            ResetProgress();
-            RollNextHallway();
-            return;
-        }
 
         bool wasCorrectChoice = false;
 
@@ -38,6 +32,11 @@ public class AnomalyManager : MonoBehaviour
         {
             wasCorrectChoice = true; // Forward and no anomaly
             Debug.Log("forward and no anomaly");
+        }
+         else if (!wentForward &&  requiresDispel && !isDispelled)
+        {
+            wasCorrectChoice = true;
+            Debug.Log("backward and anomaly present but not dispelled. how evil you are...");
         }
         else if (!wentForward && isAnomalyPresent)
         {
@@ -137,11 +136,39 @@ public class AnomalyManager : MonoBehaviour
     private void TriggerWinEscalator()
     {
         // trigger the win escalator sequence
-        Debug.Log("Player has reached the target exit count! Triggering win escalator.");
+        Debug.Log("Player has reached the target exit count! Checking dispel count for win condition...");
         
         if (winSpawner != null)
         {
-            winSpawner.SpawnWin();
+            if (dispelCount == 5)
+            {
+                Debug.Log("Player has dispelled 5 anomalies. Triggering win escalator. Good ending achieved.");
+                winSpawner.SpawnWin();
+                if (winMessage != null)
+                {
+                    winMessage.SetActive(true);
+                    Debug.Log("WinMessage activated.");
+                }
+                else
+                {
+                    Debug.LogWarning("WinMessage not found in the scene.");
+                }
+            }
+            else
+            {
+                Debug.Log("Player has not dispelled 5 anomalies. Bad ending triggered.");
+                // trigger loss scripted sequence
+                // find  BadEndingSequence and set it active
+                if (badEndingSequence != null)
+                {
+                    badEndingSequence.SetActive(true);
+                    Debug.Log("BadEndingSequence activated.");
+                }
+                else
+                {
+                    Debug.LogWarning("BadEndingSequence not found in the scene.");
+                }
+            }
         }
         else
         {

@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InGame.unity
     guid: 46ac64704f38c0b4a979505524858a04
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 8f224f6a06e687247a29c4e9d497fc70
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: d13c52f24821bb84db4fc51773d3210d
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

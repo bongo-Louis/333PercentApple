@@ -17,6 +17,10 @@ public class PlayerCallOnWhat : MonoBehaviour
 
     [SerializeField] private SceneSwitcher sceneSwitcher;
 
+    [Header("Cooldown Settings")]
+    [SerializeField] private float interactCooldown = 5f;
+    private float nextInteractTime = 0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,24 +34,39 @@ public class PlayerCallOnWhat : MonoBehaviour
         {
             Debug.LogWarning("CursorManager not found in the scene.");
         }
-
     }
 
     public void OnInteract()
     {
+        // Check if cooldown is still active
+        if (Time.time < nextInteractTime)
+        {
+            return;
+        }
+
         if (promptText.text == "Enter")
         {
+            nextInteractTime = Time.time + interactCooldown;
             player.enabled = false;
             sceneSwitcher.LoadScene();
         }
         else if (promptText.text == "Interact")
         {
-            if (dispel != null)
+            if (dispel == null || !dispel.isActiveAndEnabled)
             {
+                dispel = FindObjectOfType<DispelAnomaly>();
+            }
+
+            if (dispel != null && dispel.isActiveAndEnabled)
+            {
+                nextInteractTime = Time.time + interactCooldown;
                 Debug.Log("Dispel called");
                 dispel.HandleAnomaly();
             }
+            else
+            {
+                Debug.LogWarning("No active DispelAnomaly found for interaction.");
+            }
         }
-
     }
 }

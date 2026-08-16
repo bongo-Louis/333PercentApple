@@ -12,8 +12,8 @@ public class EscalatorForce : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        // Check if the object entering is the player
-        if (other.CompareTag("Player"))
+        // Check if the object entering is the player OR item
+        if (other.CompareTag("Player") || other.CompareTag("Item"))
         {
             // Try to get CharacterController component
             CharacterController controller = other.GetComponent<CharacterController>();

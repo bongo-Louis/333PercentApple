@@ -15,6 +15,12 @@ public class DispelAnomaly : MonoBehaviour
 
     public void HandleAnomaly()
     {
+        if (!isActiveAndEnabled)
+        {
+            Debug.LogWarning("DispelAnomaly is inactive/disabled. Ignoring HandleAnomaly call.");
+            return;
+        }
+
         Debug.Log("DispelAnomaly: HandleAnomaly called.");
         StartCoroutine(DispelSequence());
     }
@@ -40,6 +46,10 @@ public class DispelAnomaly : MonoBehaviour
         if (AnomalyManager.Instance != null)
         {
             AnomalyManager.Instance.isDispelled = true;
+            AnomalyManager.Instance.requiresDispel = false;
+            AnomalyManager.Instance.isAnomalyPresent = false;
+            AnomalyManager.Instance.dispelCount++;
+            Debug.Log("AnomalyManager: Anomaly dispelled. dispelCount incremented to " + AnomalyManager.Instance.dispelCount);
         }
 
         yield return StartCoroutine(FadeToClear());

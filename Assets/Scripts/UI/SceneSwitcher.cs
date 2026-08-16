@@ -22,4 +22,13 @@ public class SceneSwitcher : MonoBehaviour
         LoadScene();
     }
 
+    // on trigger enter
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            LoadScene();
+        }
+    }
+
 }
